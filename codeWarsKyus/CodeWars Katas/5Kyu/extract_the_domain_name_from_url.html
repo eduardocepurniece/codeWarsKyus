@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Extract the domain name from a URL</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Extract the domain name from a URL</h1>
+		<p>Write a function that when given a URL as a string, parses out just the domain name and returns it as a string. For example:</p>
+		<p>* url = "http://github.com/carbonfive/raygun" -> domain name = "github"</p>
+        <p>* url = "http://www.zombie-bites.com"         -> domain name = "zombie-bites"</p>
+        <p>* url = "https://www.cnet.com"                -> domain name = cnet"</p>
+
+		<script>
+			function domainName(url){
+                let newUrl = '';
+                let positionStart = 0;
+                let positionEnd = 0;
+                if(url.includes("www.")){
+                    positionStart = url.search("www.") + 4;
+                    positionEnd = positionStart + 1;
+                    while(url[positionEnd] != "."){
+                        positionEnd += 1;
+                    }
+                    newUrl = url.slice(positionStart, positionEnd);
+                } else if(url.includes("://")){
+                    positionStart = url.search("://") + 3;
+                    positionEnd = positionStart + 1;
+                    while(url[positionEnd] != "."){
+                        positionEnd += 1;
+                    }
+                    newUrl = url.slice(positionStart, positionEnd);
+                } else {
+                    positionEnd = positionStart + 1;
+                    while(url[positionEnd] != "."){
+                        positionEnd += 1;
+                    }
+                    newUrl = url.slice(positionStart, positionEnd);
+                }
+                return newUrl;
+            }
+		</script>
+	</body>
+</html>
