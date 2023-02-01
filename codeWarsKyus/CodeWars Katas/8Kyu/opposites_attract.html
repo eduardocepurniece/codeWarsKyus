@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Opposites Attract</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Opposites Attract</h1>
+		<p>Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.</p>
+		<p>Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.</p>
+
+		<script>
+			function lovefunc(flower1, flower2){
+                if((flower1 + flower2) % 2 === 1){
+                    return true;
+                }
+                return false;
+            }
+		</script>
+	</body>
+</html>
