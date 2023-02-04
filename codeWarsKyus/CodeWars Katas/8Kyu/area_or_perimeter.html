@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Area or Perimeter</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Area or Perimeter</h1>
+		<p>You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square. If it is a square, return its area. If it is a rectangle, return its perimeter.</p>
+		<p>Example(Input1, Input2 --> Output):</p>
+        <p>6, 10 --> 32</p>
+        <p>3, 3 --> 9</p>
+
+		<script>
+			const areaOrPerimeter = function(l , w) {
+                if(l === w){
+                    return l*w;
+                }
+                return l+l+w+w;
+            };
+		</script>
+	</body>
+</html>
