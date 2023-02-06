@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>What's the real floor?</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>What's the real floor?</h1>
+		<p>Americans are odd people: in their buildings, the first floor is actually the ground floor and there is no 13th floor (due to superstition).</p>
+		<p>Write a function that given a floor in the american system returns the floor in the european system.</p>
+        <p>With the 1st floor being replaced by the ground floor and the 13th floor being removed, the numbers move down to take their place. In case of above 13, they move down by two because there are two omitted numbers below them.</p>
+        <p>Basements (negatives) stay the same as the universal level.</p>
+        <p>Examples</p>
+        <ul>
+            <li>1  =>  0 </li>
+            <li>0  =>  0</li>
+            <li>5  =>  4</li>
+            <li>15  =>  13</li>
+            <li>-3  =>  -3</li>
+        </ul>
+
+		<script>
+			function getRealFloor(n) {
+                if (n > 13){
+                    return n - 2;
+                } else if(n > 0){
+                    return n - 1;
+                }
+                return n;
+            }
+		</script>
+	</body>
+</html>
