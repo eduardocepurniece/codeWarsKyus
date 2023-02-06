@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Basic Mathematical Operations</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Basic Mathematical Operations</h1>
+		<p>Your task is to create a function that does four basic mathematical operations.</p>
+		<p>The function should take three arguments - operation(string/char), value1(number), value2(number).</p>
+        <p>The function should return result of numbers after applying the chosen operation.</p>
+        <p>Examples(Operator, value1, value2) --> output</p>
+        <p>('+', 4, 7) --> 11</p>
+        <p>('-', 15, 18) --> -3</p>
+        <p>('*', 5, 5) --> 25</p>
+        <p>('/', 49, 7) --> 7</p>
+
+		<script>
+			function basicOp(operation, value1, value2)
+            {
+                switch (operation) {
+                    case '+':
+                        return value1 + value2;
+                        break;
+                    case '-':
+                        return value1 - value2;
+                        break
+                    case '*':
+                        return value1 * value2;
+                        break
+                    case '/':
+                        return value1 / value2;
+                        break
+                    }
+            }
+		</script>
+	</body>
+</html>
