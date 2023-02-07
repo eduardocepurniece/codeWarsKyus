@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Is it a palindrome?</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Is it a palindrome?</h1>
+		<p>Write a function that checks if a given string (case insensitive) is a palindrome.</p>
+		
+
+		<script>
+			function isPalindrome(x) {
+                let y = x.toLowerCase().split('').reverse().join('');
+                if(x.toLowerCase() === y) return true;
+                    return false;
+            }
+		</script>
+	</body>
+</html>
