@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Round up to the next multiple of 5</title>
+
+		<!-- external CSS link -->
+	<body>
+		<h1>Round up to the next multiple of 5</h1>
+		<p>Given an integer as input, can you round it to the next (meaning, "greater than or equal") multiple of 5?
+
+</p>
+		<p>Examples:</p>
+        <p>Einput:    output:</p>
+        <p>0    ->   0</p>
+        <p>2    ->   5</p>
+        <p>3    ->   5</p>
+        <p>12   ->   15</p>
+        <p>21   ->   25</p>
+
+		<script>
+			function roundToNext5(n){
+                return 5*Math.ceil(n/5);
+            }
+		</script>
+	</body>
+</html>
