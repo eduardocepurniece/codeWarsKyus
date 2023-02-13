@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Sort Numbers</title>
+
+	</head>
+	<body>
+		<h1>Sort Numbers</h1>
+		<p>Finish the solution so that it sorts the passed in array of numbers. If the function passes in an empty array or null/nil value then it should return an empty array.</p>
+		<p>For example:</p>
+        <p>solution([1, 2, 10, 50, 5]); // should return [1,2,5,10,50]</p>
+        <p>solution(null); // should return []</p>
+
+		<script>
+			function solution(nums){
+                if(!nums) return [];
+                return nums.sort(function(a,b){return a - b;}); 
+            }
+		</script>
+	</body>
+</html>
