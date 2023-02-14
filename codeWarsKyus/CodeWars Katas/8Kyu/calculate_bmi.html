@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Calculate BMI</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Calculate BMI</h1>
+		<p>Write function bmi that calculates body mass index (bmi = weight / height2).</p>
+		<p>if bmi <= 18.5 return "Underweight"</p>
+        <p>if bmi <= 25.0 return "Normal"</p>
+        <p>if bmi <= 30.0 return "Overweight"</p>
+        <p>if bmi > 30 return "Obese"</p>
+
+		<script>
+			function bmi(weight, height) {
+                let bmiCalc = weight / (height * height);
+                if(bmiCalc <= 18.5){
+                    return "Underweight";
+                }else if(bmiCalc <= 25.0){
+                    return "Normal";
+                }else if(bmiCalc <= 30){
+                    return "Overweight";
+                }
+                return "Obese";
+            }
+		</script>
+	</body>
+</html>
