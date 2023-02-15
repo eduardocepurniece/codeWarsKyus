@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Twice as old</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Twice as old</h1>
+		<p>Your function takes two arguments:</p>
+		<p>current father's age (years)</p>
+        <p>current age of his son (years)</p>
+        <p>Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old). The answer is always greater or equal to 0, no matter if it was in the past or it is in the future.</p>
+
+		<script>
+			function twiceAsOld(dadYearsOld, sonYearsOld) {
+                return Math.abs(dadYearsOld - (2*sonYearsOld));
+            }
+		</script>
+	</body>
+</html>
