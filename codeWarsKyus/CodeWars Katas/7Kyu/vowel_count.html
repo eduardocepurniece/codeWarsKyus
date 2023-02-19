@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Vowel Count</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Vowel Count</h1>
+		<p>Return the number (count) of vowels in the given string.</p>
+		<p>We will consider a, e, i, o, u as vowels for this Kata (but not y).</p>
+        <p>The input string will only consist of lower case letters and/or spaces.</p>
+
+		<script>
+			function getCount(str) {
+                let count = 0;
+                let vowels = { a:'a', e:'e', i:'i', o:'o', u:'u'}
+                for(let i = 0; i < str.length; i++){
+                    if(vowels.hasOwnProperty(str[i])){
+                        count += 1;
+                    }
+                }
+                return count;
+            }
+		</script>
+	</body>
+</html>
