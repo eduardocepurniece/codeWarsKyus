@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>String repeat</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>String repeat</h1>
+		<p>Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.</p>
+		<p>Examples (input -> output)</p>
+        <p>6, "I"     -> "IIIIII"</p>
+        <p>5, "Hello" -> "HelloHelloHelloHelloHello"</p>
+
+		<script>
+			function repeatStr (n, s) {
+                let newStr = s;
+                for(let i = 1; i < n; i++){
+                    newStr += s; 
+                }
+                return newStr;
+}              
+		</script>
+	</body>
+</html>
