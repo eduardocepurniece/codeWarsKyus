@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Is the string uppercase?/title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Is the string uppercase?</h1>
+		<p>Create a method to see whether the string is ALL CAPS.</p>
+		<p>Examples (input -> output)</p>
+        <p>"c" -> False</p>
+        <p>"C" -> True</p>
+        <p>"hello I AM DONALD" -> False</p>
+        <p>"HELLO I AM DONALD" -> True</p>
+        <p>"ACSKLDFJSgSKLDFJSKLDFJ" -> False</p>
+        <p>"ACSKLDFJSGSKLDFJSKLDFJ" -> True</p>
+        <p>In this Kata, a string is said to be in ALL CAPS whenever it does not contain any lowercase letter so any string containing no letters at all is trivially considered to be in ALL CAPS.</p>
+
+		<script>
+			String.prototype.isUpperCase = function() {
+                return this.toUpperCase() === this.toString();
+            }           
+		</script>
+	</body>
+</html>
