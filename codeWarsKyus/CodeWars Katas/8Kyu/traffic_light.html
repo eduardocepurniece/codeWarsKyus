@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+	<h1>Thinkful - Logic Drills: Traffic light</h1>
+        <p>You're writing code to control your town's traffic lights. You need a function to handle each change from green, to yellow, to red, and then to green again.</p>
+	<p>Complete the function that takes a string as an argument representing the current state of the light and returns a string representing the state the light should change to.</p>
+	<p>For example, when the input is green, output should be yellow.</p>
+    </body>
+    <script>
+	function updateLight(current) {
+  	    if(current === 'green'){
+    	       	return 'yellow';
+  	    } else if(current === 'yellow'){
+    		return 'red';
+  	    } else if(current === 'red'){
+    		return 'green';
+  	    }
+	}
+    </script>
+</html>
