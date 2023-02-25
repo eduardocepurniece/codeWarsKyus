@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Student's Final Grade</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Student's Final Grade</h1>
+		<p>Create a function finalGrade, which calculates the final grade of a student depending on two parameters: a grade for the exam and a number of completed projects.</p>
+		<p>This function should take two arguments: exam - grade for exam (from 0 to 100); projects - number of completed projects (from 0 and above);</p>
+        <p>This function should return a number (final grade). There are four types of final grades:</p>
+        <p>100, if a grade for the exam is more than 90 or if a number of completed projects more than 10.</p>
+        <p>90, if a grade for the exam is more than 75 and if a number of completed projects is minimum 5.</p>
+        <p>75, if a grade for the exam is more than 50 and if a number of completed projects is minimum 2.</p>
+        <p>0, in other cases</p>
+        <p>Examples(Inputs-->Output):</p>
+        <p>100, 12 --> 100</p>
+        <p>99, 0 --> 100</p>
+        <p>10, 15 --> 100</p>
+        <p>85, 5 --> 90</p>
+        <p>55, 3 --> 75</p>
+        <p>55, 0 --> 0</p>
+        <p>20, 2 --> 0</p>
+
+
+		<script>
+			function finalGrade (exam, projects) {
+                if(exam > 90 || projects > 10){
+                    return 100;
+                } else if(exam > 75 && projects > 4){
+                    return 90;
+                } else if(exam > 50 && projects > 1){
+                    return 75;
+                }
+                return 0;
+            }
+		</script>
+	</body>
+</html>
