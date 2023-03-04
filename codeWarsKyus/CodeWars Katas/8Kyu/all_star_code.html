@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>All Star Code Challenge #18</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>All Star Code Challenge #18</h1>
+		<p>Create a function that accepts a string and a single character, and returns an integer of the count of occurrences the 2nd argument is found in the first one.</p>
+		<p>If no occurrences can be found, a count of 0 should be returned.</p>
+        <p>("Hello", "o")  ==>  1</p>
+        <p>("Hello", "l")  ==>  2</p>
+        <p>("", "z")       ==>  0</p>
+        <p>str_count("Hello", 'o'); // returns 1</p>
+        <p>str_count("Hello", 'l'); // returns 2</p>
+        <p>str_count("", 'z'); // returns 0</p>
+        <p>Notes</p>
+        <p>The first argument can be an empty string</p>
+        <p>In languages with no distinct character data type, the second argument will be a string of length 1
+</p>
+
+		<script>
+			function strCount(str, letter){  
+                let count = 0;
+                for(let i = 0; i < str.length; i++){
+                    if(str[i] === letter){
+                        count += 1;
+                    }
+                }
+                return count;
+            }
+		</script>
+	</body>
+</html>
