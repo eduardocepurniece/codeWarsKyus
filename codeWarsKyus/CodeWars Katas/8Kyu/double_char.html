@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Double Char</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Double Char</h1>
+		<p>Given a string, you have to return a string in which each character (case-sensitive) is repeated once.</p>
+		<p>Examples (Input -> Output):</p>
+        <p>* "String"      -> "SSttrriinngg"</p>
+        <p>* "Hello World" -> "HHeelllloo  WWoorrlldd"</p>
+        <p>* "1234!_ "     -> "11223344!!__  "</p>
+
+		<script>
+			function doubleChar(str) {
+                let newStr = [];
+                for(let i = 0; i < str.length; i++){
+                    newStr.push(str[i]);
+                    newStr.push(str[i]);
+                }
+                return newStr.join('');
+            }
+
+		</script>
+	</body>
+</html>
