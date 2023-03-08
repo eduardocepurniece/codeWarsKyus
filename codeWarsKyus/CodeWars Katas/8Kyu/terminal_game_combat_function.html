@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Grasshopper - Terminal game combat function</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Grasshopper - Terminal game combat function</h1>
+		<p>Create a combat function that takes the player's current health and the amount of damage recieved, and returns the player's new health. Health can't be less than 0.</p>
+
+		<script>
+			function combat(health, damage) {
+                if(health - damage < 0) return 0;
+                return health - damage;
+            }
+		</script>
+	</body>
+</html>
