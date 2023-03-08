@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Holiday VIII - Duty Free</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Holiday VIII - Duty Free</h1>
+		<p>The purpose of this kata is to work out just how many bottles of duty free whiskey you would have to buy such that the saving over the normal high street price would effectively cover the cost of your holiday.</p>
+		<p>You will be given the high street price (normPrice), the duty free discount (discount) and the cost of the holiday.</p>
+        <p>For example, if a bottle cost £10 normally and the discount in duty free was 10%, you would save £1 per bottle. If your holiday cost £500, the answer you should return would be 500.</p>
+        <p>All inputs will be integers. Please return an integer. Round down.</p>
+
+		<script>
+			function dutyFree(normPrice, discount, hol){
+                let discPercent = discount / 100;
+                return Math.floor(hol / (normPrice * discPercent));
+            }
+		</script>
+	</body>
+</html>
