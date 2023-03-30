@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Reversed sequence</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Reversed sequence</h1>
+		<p>Complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them.</p>
+		<p>For example:</p>
+        <p>a = 1</p>
+        <p>b = 4</p>
+        <p>--> [1, 2, 3, 4]</p>
+
+		<script>
+			function between(a, b) {
+                let arr = [];
+                for(let i = a; i <= b; i++){
+                    arr.push(i);
+                }
+                return arr;
+            }
+		</script>
+	</body>
+</html>
