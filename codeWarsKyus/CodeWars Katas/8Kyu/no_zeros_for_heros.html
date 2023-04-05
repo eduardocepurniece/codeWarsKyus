@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>No zeros for heros</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>No zeros for heros</h1>
+		<p>Numbers ending with zeros are boring.</p>
+		<p>They might be fun in your world, but not here.</p>
+        <p>Get rid of them. Only the ending ones.</p>
+        <p>1450 -> 145</p>
+        <p>960000 -> 96</p>
+        <p>1050 -> 105</p>
+        <p>-1050 -> -105</p>
+        <p>Zero alone is fine, don't worry about it. Poor guy anyway</p>
+
+		<script>
+			function noBoringZeros(n) {
+                while(n % 10 === 0 && n != 0){
+                    n = n/10;
+                }
+                return n;
+            }
+		</script>
+	</body>
+</html>
