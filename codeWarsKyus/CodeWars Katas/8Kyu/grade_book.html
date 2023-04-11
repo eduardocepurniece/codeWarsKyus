@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Grasshopper - Grade book</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Grasshopper - Grade book</h1>
+		<p>Complete the function so that it finds the average of the three scores passed to it and returns the letter value associated with that grade.</p>
+        <p>Numerical Score ------- Letter Grade</p>
+		<p>90 <= score <= 100 ------- 'A'</p>
+        <p>80 <= score < 90 ------- 'B'</p>
+        <p>70 <= score < 80 ------- 'C'</p>
+        <p>60 <= score < 70 ------- 'D'</p>
+        <p>0 <= score < 60 ------- 	'F'</p>
+        
+
+		<script>
+			function getGrade (s1, s2, s3) {
+                let average = (s1 + s2 + s3) / 3;
+                if(average < 60) return 'F';
+                else if(average < 70) return 'D';
+                else if(average < 80) return 'C';
+                else if(average < 90) return 'B';
+                else return 'A';
+            }
+		</script>
+	</body>
+</html>
