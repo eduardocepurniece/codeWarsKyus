@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Take the Derivative/title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Take the Derivative</h1>
+		<p>This function takes two numbers as parameters, the first number being the coefficient, and the second number being the exponent.</p>
+		<p>Your function should multiply the two numbers, and then subtract 1 from the exponent. Then, it has to print out an expression (like 28x^7). "^1" should not be truncated when exponent = 2.</p>
+        <p>For example:</p>
+        <p>derive(7, 8)</p>
+        <p>In this case, the function should multiply 7 and 8, and then subtract 1 from 8. It should output "56x^7", the first number 56 being the product of the two numbers, and the second number being the exponent minus 1.</p>
+        <p>derive(7, 8) --> this should output "56x^7" </p>
+        <p>derive(5, 9) --> this should output "45x^8" </p>
+        <p>Notes:</p>
+        <p>The output of this function should be a string</p>
+        <p>The exponent will never be 1, and neither number will ever be 0</p>
+
+		<script>
+			function derive(c,e) {
+                return `${c*e}x^${e-1}`;
+            }
+		</script>
+	</body>
+</html>
