@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Rot13</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Rot13</h1>
+		<p>ROT13 is a simple letter substitution cipher that replaces a letter with the letter 13 letters after it in the alphabet. ROT13 is an example of the Caesar cipher.</p>
+        <p>Create a function that takes a string and returns the string ciphered with Rot13. If there are numbers or special characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet should be shifted, like in the original Rot13 "implementation".</p>
+
+		<script>
+			function rot13(message){
+                let dAlphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z","a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+                let rotMessage = message.split('').map((x,i) => {
+                    if(x === x.toLowerCase() && dAlphabet.includes(x)){
+                        return dAlphabet[dAlphabet.indexOf(x) + 13];
+                    } else if(x.toLowerCase() !== x && dAlphabet.includes(x.toLowerCase())){
+                        return dAlphabet[dAlphabet.indexOf(x.toLowerCase()) + 13].toUpperCase();
+                    } else{
+                        return x;
+                    }});
+                return rotMessage.join('')
+            }
+		</script>
+	</body>
+</html>
