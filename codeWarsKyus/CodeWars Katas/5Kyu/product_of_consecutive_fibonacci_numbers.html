@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Product of consecutive Fib numbers</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Product of consecutive Fib numbers</h1>
+		<p>The Fibonacci numbers are the numbers in the following integer sequence (Fn):</p>
+		<p>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, ...</p>
+        <p>such as</p>
+        <p>F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.</p>
+        <p>Given a number, say prod (for product), we search two Fibonacci numbers F(n) and F(n+1) verifying</p>
+        <p>F(n) * F(n+1) = prod.</p>
+        <p>Your function productFib takes an integer (prod) and returns an array:</p>
+        <p>[F(n), F(n+1), true] or {F(n), F(n+1), 1} or (F(n), F(n+1), True)</p>
+        <p>depending on the language if F(n) * F(n+1) = prod.</p>
+        <p>If you don't find two consecutive F(n) verifying F(n) * F(n+1) = prodyou will return</p>
+        <p>[F(n), F(n+1), false] or {F(n), F(n+1), 0} or (F(n), F(n+1), False)</p>
+        <p>F(n) being the smallest one such as F(n) * F(n+1) > prod.</p>
+
+		<script>
+			function productFib(prod){
+                let stop = false;
+                let equalProd = true;
+                let f = 0;
+                let fn = 0;
+                let fn1 = 1;
+                while(stop !== true){
+                    if(fn*fn1 < prod){
+                        f = fn1;
+                        fn1 = fn1 + fn;
+                        fn = f;
+                    }else if(fn*fn1 > prod){
+                        stop = true;
+                        equalProd = false;
+                    } else{
+                        stop = true;
+                    }
+                }
+                return [fn, fn1, equalProd];
+            }
+		</script>
+	</body>
+</html>
