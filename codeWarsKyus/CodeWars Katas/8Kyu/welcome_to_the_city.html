@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Welcome to the City</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Welcome to the City</h1>
+		<p>Create a method sayHello/say_hello/SayHello that takes as input a name, city, and state to welcome a person. Note that name will be an array consisting of one or more values that should be joined together with one space between each, and the length of the name array in test cases will vary.</p>
+        <p>Example:</p>
+        <p>sayHello(['John', 'Smith'], 'Phoenix', 'Arizona')</p>
+        <p>This example will return the string</p>
+        <p>Hello, John Smith! Welcome to Phoenix, Arizona!</p>
+
+		<script>
+			function sayHello( name, city, state ) {
+                return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+            }
+		</script>
+	</body>
+</html>
