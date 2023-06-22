@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Highest and Lowest</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Highest and Lowest</h1>
+		<p>In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.</p>
+        <p>Examples</p>
+        <p>highAndLow("1 2 3 4 5");  // return "5 1"</p>
+        <p>highAndLow("1 2 -3 4 5"); // return "5 -3"</p>
+        <p>highAndLow("1 9 3 4 -5"); // return "9 -5"</p>
+
+		<script>
+			function highAndLow(numbers){
+                let sorted = numbers.split(' ').sort((a,b) => a-b);
+                return `${sorted[sorted.length - 1]} ${sorted[0]}`;
+            }
+		</script>
+	</body>
+</html>
