@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Training JS #4: Basic data types--Array</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Training JS #4: Basic data types--Array</h1>
+		<p>I've written five functions. Each function receives a parameter arr which is an array. Complete the functions using arr inside the function bodies.</p>
+        <p>1. getLength(arr)    should return length of arr</p>
+        <p>2. getFirst(arr)     should return the first element of arr</p>
+        <p>3. getLast(arr)      should return the last element of arr</p>
+        <p>4. pushElement(arr)  should push an element to arr, and then return arr</p>
+        <p>5. popElement(arr)   should pop an element from arr, and then return arr</p>
+
+		<script>
+			function getLength(arr){
+                return arr.length;
+            }
+            function getFirst(arr){
+                return arr[0];
+            }
+            function getLast(arr){
+                return arr[arr.length - 1];
+            }
+            function pushElement(arr){
+                var el=1;
+                arr.push(el);
+                return arr
+            }
+            function popElement(arr){
+                arr.pop();
+                return arr
+            }
+		</script>
+	</body>
+</html>
