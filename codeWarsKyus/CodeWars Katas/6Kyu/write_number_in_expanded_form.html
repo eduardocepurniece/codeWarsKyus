@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Number in Expanded Form</title>
+</head>
+<body>
+    <h1>Write Number in Expanded Form</h1>
+    <p>You will be given a number and you will need to return it as a string in Expanded Form. For example:</p>
+    <p>expandedForm(12); // Should return '10 + 2'</p>
+    <p>expandedForm(42); // Should return '40 + 2'</p>
+    <p>expandedForm(70304); // Should return '70000 + 300 + 4'</p>
+    <p>NOTE: All numbers will be whole numbers greater than 0.</p>
+    <script>
+        function expandedForm(num) {
+            let numText = num.toString();
+            return numText.split('').map((x,y) => {
+                for(let i = 1; i < (numText.length - y); i++){
+                    x += '0';
+                }
+                return x
+            }).filter(x => x[0] !== '0').join(' + ');
+        }
+    </script>
+</body>
+</html>
