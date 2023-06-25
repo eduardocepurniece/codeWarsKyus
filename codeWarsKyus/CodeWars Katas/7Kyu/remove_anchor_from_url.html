@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Remove anchor from URL</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Remove anchor from URL</h1>
+		<p>Complete the function/method so that it returns the url with anything after the anchor (#) removed.</p>
+        <p>Examples</p>
+        <p>"www.codewars.com#about" --> "www.codewars.com"</p>
+        <p>"www.codewars.com?page=1" -->"www.codewars.com?page=1"</p>
+
+		<script>
+			function removeUrlAnchor(url){
+                if(url.includes('#')) return url.slice(0, url.indexOf('#'));
+                return url;
+            }
+		</script>
+	</body>
+</html>
