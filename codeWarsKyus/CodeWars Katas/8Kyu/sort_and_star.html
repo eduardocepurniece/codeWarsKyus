@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Sort and Star</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Sort and Star</h1>
+		<p>You will be given a list of strings. You must sort it alphabetically (case-sensitive, and based on the ASCII values of the chars) and then return the first value.</p>
+		<p>The returned value must be a string, and have "***" between each of its letters.</p>
+        <p>You should not remove or add elements from/to the array.</p>
+
+		<script>
+			function twoSort(s) {
+                return s.sort()[0].split('').join('***');
+            }
+		</script>
+	</body>
+</html>
