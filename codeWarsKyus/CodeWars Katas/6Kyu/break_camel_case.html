@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Break camelCase</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Break camelCase</h1>
+		<p>Complete the solution so that the function will break up camel casing, using a space between words.</p>
+        <p>Example</p>
+        <p>"camelCasing"  =>  "camel Casing"</p>
+        <p>"identifier"   =>  "identifier"</p>
+        <p>""             =>  ""</p>
+
+		<script>
+			function solution(string) {
+                return string.split('').map((x,y) => {
+                    if(x.toUpperCase() === x) return x  = ` ${x}`;
+                    else return x = x;
+                }).join('');
+            }
+
+		</script>
+	</body>
+</html>
