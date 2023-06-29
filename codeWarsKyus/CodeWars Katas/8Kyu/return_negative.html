@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Return Negative</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Return Negative</h1>
+		<p>In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?</p>
+        <p>Examples</p>
+        <p>makeNegative(1);    // return -1</p>
+        <p>makeNegative(-5);   // return -5</p>
+        <p>makeNegative(0);    // return 0</p>
+        <p>makeNegative(0.12); // return -0.12</p>
+
+		<script>
+			function makeNegative(num) {
+                return num < 0 ? num : num - (2 * num);
+            }
+		</script>
+	</body>
+</html>
