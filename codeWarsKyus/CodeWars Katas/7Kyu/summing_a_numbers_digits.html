@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Summing a number's digits</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Summing a number's digits</h1>
+		<p>Write a function named sumDigits which takes a number as input and returns the sum of the absolute value of each of the number's decimal digits.</p>
+
+        <p>For example: (Input --> Output)</p>
+        <p>10 --> 1</p>
+        <p>99 --> 18</p>
+        <p>-32 --> 5</p>
+
+        <p>Let's assume that all numbers in the input will be integer values.</p>
+
+
+		<script>
+			function sumDigits(number) {
+                return Math.abs(number).toString().split('').reduce((cur, acc)=> cur + Number(acc), 0);
+            }
+		</script>
+	</body>
+</html>
