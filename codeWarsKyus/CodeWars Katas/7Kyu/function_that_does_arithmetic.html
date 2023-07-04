@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Make a function that does arithmetic!/title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Make a function that does arithmetic!</h1>
+		<p>Given two numbers and an arithmetic operator (the name of it, as a string), return the result of the two numbers having that operator used on them.</p>
+		<p>a and b will both be positive integers, and a will always be the first number in the operation, and b always the second.</p>
+        <p>The four operators are "add", "subtract", "divide", "multiply".</p>
+        <p>The four operators are "add", "subtract", "divide", "multiply".</p>
+        <p>5, 2, "add"      --> 7</p>
+        <p>5, 2, "subtract" --> 3</p>
+        <p>5, 2, "multiply" --> 10</p>
+        <p>5, 2, "divide"   --> 2.5</p>
+		<script>
+			function arithmetic(a, b, operator){
+                switch(operator){
+                    case 'add':
+                        return a + b;
+                    case 'subtract':
+                        return a - b;
+                    case 'multiply':
+                        return a * b;
+                    case 'divide':
+                        return a / b;
+                }
+            }
+		</script>
+	</body>
+</html>
