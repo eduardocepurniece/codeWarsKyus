@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Simple Fun #176: Reverse Letter</title>
+
+		<!-- external CSS link -->
+	</head>
+	<body>
+		<h1>Simple Fun #176: Reverse Letter</h1>
+		<p>Given a string str, reverse it and omit all non-alphabetic characters.</p>
+        <p>Example</p>
+        <p>For str = "krishan", the output should be "nahsirk".</p>
+        <p>For str = "ultr53o?n", the output should be "nortlu".</p>
+        <p>Input/Output</p>
+        <p>[input] string str</p>
+        <p>A string consists of lowercase latin letters, digits and symbols.</p>
+        <p>[output] a string</p>
+
+		<script>
+			function reverseLetter(str) {
+                let a = 'abcdefghijklmnopqrstuvwxyz'.split('');
+                let newStr = [];
+                str.split('').forEach(x => {if(a.includes(x)) newStr.push(x)});
+                return newStr.reverse().join('');
+            }
+		</script>
+	</body>
+</html>
