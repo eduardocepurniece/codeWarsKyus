@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove First and Last Character Part Two</title>
+</head>
+<body>
+    <h1>Remove First and Last Character Part Two</h1>
+
+    <p>This is a spin off of my first kata.</p>
+    <p>You are given a string containing a sequence of character sequences separated by commas.</p>
+    <p>Write a function which returns a new string containing the same character sequences except the first and the last ones but this time separated by spaces.</p>
+    <p>If the input string is empty or the removal of the first and last items would cause the resulting string to be empty, return an empty value (represented as a generic value NULL in the examples below).</p>
+    
+    <p>Examples</p>
+    <p>"1,2,3"      =>  "2"</p>
+    <p>"1,2,3,4"    =>  "2 3"</p>
+    <p>"1,2,3,4,5"  =>  "2 3 4"</p>
+    <p>""     =>  NULL</p>
+    <p>"1"    =>  NULL</p>
+    <p>"1,2"  =>  NULL</p>
+
+    <script>
+        function array(string) {
+            if(string.split(',').length <= 2) return null;
+            else return string.split(',').slice(1, string.split(',').length -1).join(' ')
+        }
+    </script>
+</body>
+</html>
