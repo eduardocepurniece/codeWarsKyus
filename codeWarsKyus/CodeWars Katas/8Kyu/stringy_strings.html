@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stringy Strings</title>
+</head>
+<body>
+    <h1>Stringy Strings</h1>
+
+    <p>Write me a function stringy that takes a size and returns a string of alternating 1s and 0s.</p>
+    <p>The string should start with a 1.</p>
+    <p>A string with size 6 should return :'101010'.</p>
+    <p>With size 4 should return : '1010'.</p>
+    <p>With size 12 should return : '101010101010'.</p>
+    <p>The size will always be positive and will only use whole numbers.</p>
+
+
+    <script>
+        function stringy(size) {
+            let str = [];
+            for(let i = 0; i < size; i++){
+                if(i % 2 === 0) str.push('1');
+                else str.push('0');
+            }  
+            return str.join('')
+        }
+    </script>
+</body>
+</html>
