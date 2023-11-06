@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neutralisation</title>
+</head>
+<body>
+    <h1>Neutralisation</h1>
+
+    <p>Given two strings comprised of + and -, return a new string which shows how the two strings interact in the following way:</p>
+    <p>When positives and positives interact, they remain positive.</p>
+    <p>When negatives and negatives interact, they remain negative.</p>
+    <p>But when negatives and positives interact, they become neutral, and are shown as the number 0.</p>
+
+    <p>Examples</p>
+    <p>("--++--", "++--++") ➞ "000000"</p>
+    <p>("-+-+-+", "-+-+-+") ➞ "-+-+-+"</p>
+    <p>("-++-", "-+-+") ➞ "-+00"</p>
+
+
+    <script>
+        function neutralise(s1, s2) {
+            let str = []
+            for(let i = 0; i < s1.length; i++){
+                if(s1[i] != s2[i]) str.push('0');
+                else str.push(s1[i])
+            }
+            return str.join('')
+        }
+    </script>
+</body>
+</html>
