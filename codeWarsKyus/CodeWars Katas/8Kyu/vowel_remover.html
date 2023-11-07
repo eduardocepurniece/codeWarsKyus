@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel remover</title>
+</head>
+<body>
+    <h1>Vowel remover</h1>
+
+    <p>Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.</p>
+    
+    <p>Examples</p>
+    <p>"hello"     -->  "hll"</p>
+    <p>"codewars"  -->  "cdwrs"</p>
+    <p>"goodbye"   -->  "gdby"</p>
+    <p>"HELLO"     -->  "HELLO"</p>
+
+    <p>don't worry about uppercase vowels</p>
+    <p>y is not considered a vowel for this kata</p>
+
+    <script>
+        function shortcut (string) {
+            let vowels = 'aeiou'
+            return string.split('').map(x => vowels.includes(x) ? '' : x).join('')
+        }
+    </script>
+</body>
+</html>
