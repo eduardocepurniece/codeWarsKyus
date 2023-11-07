@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contamination #1 -String-</title>
+</head>
+<body>
+    <h1>Contamination #1 -String-</h1>
+
+    <p>An AI has infected a text with a character!!</p>
+    <p>This text is now fully mutated to this character.</p>
+    <p>If the text or the character are empty, return an empty string.</p>
+    <p>There will never be a case when both are empty as nothing is going on!!</p>
+    <p>Note: The character is a string of length 1 or an empty string.</p>
+
+    <p>Example</p>
+    <p>text before = "abc"</p>
+    <p>character   = "z"</p>
+    <p>text after  = "zzz"</p>
+
+    <script>
+        function contamination(text, char){
+            if(text.length === 0 || char.length ===0) return '';
+            else return text.split('').map(x => char).join('');
+        }
+    </script>
+</body>
+</html>
