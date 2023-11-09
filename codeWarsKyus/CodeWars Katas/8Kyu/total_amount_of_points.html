@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total amount of points</title>
+</head>
+<body>
+    <h1>Total amount of points</h1>
+
+    <p>Our football team has finished the championship.</p>
+    <p>Our team's match results are recorded in a collection of strings. Each match is represented by a string in the format "x:y", where x is our team's score and y is our opponents score.</p>
+    <p>For example: ["3:1", "2:2", "0:1", ...]</p>
+
+    <p>Points are awarded for each match as follows:</p>
+    <p>if x > y: 3 points (win)</p>
+    <p>if x < y: 0 points (loss)</p>
+    <p>if x = y: 1 point (tie)</p>
+
+    <p>We need to write a function that takes this collection and returns the number of points our team (x) got in the championship by the rules given above.</p>
+    
+    <p>Notes:</p>
+    <p>our team always plays 10 matches in the championship</p>
+    <p>0 <= x <= 4</p>
+    <p>0 <= y <= 4</p>
+
+    <script>
+        function points(games) {
+            return games.map(x => {
+                if(x[0] > x[2]) return 3;
+                else if(x[0] < x[2]) return 0;
+                else return 1;
+            }).reduce((acc,num) => acc + num);
+        }
+    </script>
+</body>
+</html>
