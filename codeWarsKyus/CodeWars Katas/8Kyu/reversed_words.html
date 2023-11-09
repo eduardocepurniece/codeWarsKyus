@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reversed Words</title>
+</head>
+<body>
+    <h1>Reversed Words</h1>
+
+    <p>Complete the solution so that it reverses all of the words within the string passed in.</p>
+    <p>Words are separated by exactly one space and there are no leading or trailing spaces.</p>
+
+    <p>Example(Input --> Output):</p>
+    <p>"The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"</p>
+
+    <script>
+        function reverseWords(str){
+            return str.split(' ').reverse().join(' ');
+        }
+    </script>
+</body>
+</html>
